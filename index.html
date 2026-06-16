@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zakariya Baaziz</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <canvas id="loaderCanvas"></canvas>
+    <div class="loader-text">
+      <span class="lt-name">ZAK</span>
+      <span class="lt-sub">loading something real...</span>
+    </div>
+  </div>
+
+  <!-- CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-trail"></div>
+
+  <!-- HERO -->
+  <header id="hero">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="tag">Tangier, MA · Full-Stack Dev</div>
+        <h1 class="hero-name">Zakariya<br/><em>Baaziz</em></h1>
+        <div class="hero-contact">
+          <a href="mailto:zakariyabaaziz9@gmail.com" class="email-link">zakariyabaaziz9@gmail.com</a>
+        </div>
+        <div class="hero-stack">
+          <span>Laravel</span><span>React</span><span>Docker</span><span>Redis</span>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="photo-wrap">
+          <img id="heroPhoto" src="" alt="Zakariya Baaziz" />
+          <div class="photo-deco"></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">scroll ↓</div>
+  </header>
+
+  <!-- PROJECTS -->
+  <main id="projects">
+    <div class="section-label">// my projects</div>
+
+    <div class="projects-list">
+
+      <article class="project-card" data-index="0">
+        <div class="card-inner">
+          <div class="card-top">
+            <span class="proj-num">01</span>
+            <div class="card-links">
+              <a href="https://vocus-so.vercel.app/" target="_blank" class="btn-live">
+                <span class="btn-dot"></span>Live
+              </a>
+              <a href="https://github.com/zak2k3" target="_blank" class="btn-gh">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <h2 class="proj-name">Vocus</h2>
+          <p class="proj-desc">A focused productivity tool built for people who think in blocks. Clean writing meets structured output — no noise, just flow.</p>
+          <div class="proj-tags"><span>React</span><span>Vercel</span></div>
+          <div class="card-animal cat">
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="40" cy="50" rx="22" ry="18" fill="currentColor" opacity=".12"/>
+              <ellipse cx="40" cy="36" rx="14" ry="13" fill="currentColor" opacity=".18"/>
+              <polygon points="28,26 24,14 34,22" fill="currentColor" opacity=".18"/>
+              <polygon points="52,26 56,14 46,22" fill="currentColor" opacity=".18"/>
+              <ellipse cx="35" cy="37" rx="2" ry="3" fill="currentColor" opacity=".5"/>
+              <ellipse cx="45" cy="37" rx="2" ry="3" fill="currentColor" opacity=".5"/>
+              <ellipse cx="40" cy="41" rx="3" ry="2" fill="currentColor" opacity=".3"/>
+              <line x1="40" y1="43" x2="40" y2="60" stroke="currentColor" opacity=".15" stroke-width="2"/>
+              <line x1="40" y1="60" x2="52" y2="72" stroke="currentColor" opacity=".15" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-index="1">
+        <div class="card-inner">
+          <div class="card-top">
+            <span class="proj-num">02</span>
+            <div class="card-links">
+              <a href="https://zakariyabaaziz.vercel.app/" target="_blank" class="btn-live">
+                <span class="btn-dot"></span>Live
+              </a>
+              <a href="https://github.com/zak2k3" target="_blank" class="btn-gh">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <h2 class="proj-name">Portfolio</h2>
+          <p class="proj-desc">The digital fingerprint. Every project, every decision, in one place — built and owned, not templated.</p>
+          <div class="proj-tags"><span>React</span><span>Vercel</span></div>
+          <div class="card-animal fox">
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="40" cy="52" rx="20" ry="15" fill="currentColor" opacity=".12"/>
+              <ellipse cx="40" cy="35" rx="13" ry="12" fill="currentColor" opacity=".18"/>
+              <polygon points="30,25 22,10 36,20" fill="currentColor" opacity=".2"/>
+              <polygon points="50,25 58,10 44,20" fill="currentColor" opacity=".2"/>
+              <ellipse cx="35" cy="36" rx="2.5" ry="3" fill="currentColor" opacity=".45"/>
+              <ellipse cx="45" cy="36" rx="2.5" ry="3" fill="currentColor" opacity=".45"/>
+              <path d="M37 41 Q40 44 43 41" stroke="currentColor" stroke-width="1.5" opacity=".35" fill="none"/>
+              <line x1="26" y1="38" x2="14" y2="36" stroke="currentColor" opacity=".2" stroke-width="1.2"/>
+              <line x1="26" y1="40" x2="14" y2="42" stroke="currentColor" opacity=".2" stroke-width="1.2"/>
+              <line x1="54" y1="38" x2="66" y2="36" stroke="currentColor" opacity=".2" stroke-width="1.2"/>
+              <line x1="54" y1="40" x2="66" y2="42" stroke="currentColor" opacity=".2" stroke-width="1.2"/>
+            </svg>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-index="2">
+        <div class="card-inner">
+          <div class="card-top">
+            <span class="proj-num">03</span>
+            <div class="card-links">
+              <a href="https://www.tradesjournal.pro/" target="_blank" class="btn-live">
+                <span class="btn-dot"></span>Live
+              </a>
+              <a href="https://github.com/zak2k3" target="_blank" class="btn-gh">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <h2 class="proj-name">TradesJournal</h2>
+          <p class="proj-desc">A trading journal built by a trader. Track XAU/USD and any pair, log entries, review your edge — no fluff, just data that helps you get better.</p>
+          <div class="proj-tags"><span>Laravel</span><span>React</span><span>MySQL</span></div>
+          <div class="card-animal wolf">
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="40" cy="54" rx="20" ry="14" fill="currentColor" opacity=".1"/>
+              <ellipse cx="40" cy="34" rx="14" ry="13" fill="currentColor" opacity=".16"/>
+              <polygon points="30,23 25,8 38,21" fill="currentColor" opacity=".2"/>
+              <polygon points="50,23 55,8 42,21" fill="currentColor" opacity=".2"/>
+              <ellipse cx="35" cy="35" rx="2.5" ry="3.5" fill="currentColor" opacity=".5"/>
+              <ellipse cx="45" cy="35" rx="2.5" ry="3.5" fill="currentColor" opacity=".5"/>
+              <ellipse cx="40" cy="40" rx="4" ry="2.5" fill="currentColor" opacity=".2"/>
+              <path d="M35 43 Q40 47 45 43" stroke="currentColor" stroke-width="2" opacity=".25" fill="none"/>
+              <ellipse cx="40" cy="60" rx="8" ry="4" fill="currentColor" opacity=".08"/>
+            </svg>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <span class="footer-name">Zakariya Baaziz</span>
+      <span class="footer-year">© 2026</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
