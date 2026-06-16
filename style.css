@@ -3,7 +3,7 @@
   --bg: #0c0c0c;
   --surface: #141414;
   --border: #242424;
-  --text: #e8e8e8;
+  --text: #e8e8e8;#
   --muted: #666;
   --accent: #f5c842;
   --accent2: #ff5c3a;
@@ -80,28 +80,16 @@ a { color: inherit; text-decoration: none; }
 /* ── CURSOR ── */
 #cursor {
   position: fixed;
-  width: 10px;
-  height: 10px;
-  background: var(--accent);
-  border-radius: 50%;
+  width: 32px;
+  height: 32px;
   pointer-events: none;
   z-index: 8888;
-  transform: translate(-50%, -50%);
-  transition: transform 0.05s, width 0.2s, height 0.2s, background 0.2s;
-  mix-blend-mode: difference;
+  transform: translate(-50%, -70%);
+  transition: transform 0.05s;
 }
 
 #cursor-trail {
-  position: fixed;
-  width: 32px;
-  height: 32px;
-  border: 1.5px solid var(--accent);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 8887;
-  transform: translate(-50%, -50%);
-  transition: left 0.12s ease, top 0.12s ease, width 0.2s, height 0.2s;
-  opacity: 0.4;
+  display: none;
 }
 
 body:has(a:hover) #cursor { width: 18px; height: 18px; }
