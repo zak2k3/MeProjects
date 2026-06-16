@@ -163,17 +163,49 @@ setTimeout(() => {
   tryHideLoader();
 }, 2200);
 
-// ── CUSTOM CURSOR ──
+// ── CUSTOM CAT CURSOR ──
 const cursor = document.getElementById('cursor');
-const trail = document.getElementById('cursor-trail');
+
+// inject cat SVG
+cursor.innerHTML = `
+<svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:32px;height:32px;">
+  <!-- ears -->
+  <polygon points="8,18 2,4 14,12" fill="#f5c842"/>
+  <polygon points="32,18 38,4 26,12" fill="#f5c842"/>
+  <!-- inner ears -->
+  <polygon points="9,16 4,7 13,13" fill="#0c0c0c"/>
+  <polygon points="31,16 36,7 27,13" fill="#0c0c0c"/>
+  <!-- head -->
+  <ellipse cx="20" cy="24" rx="14" ry="13" fill="#f5c842"/>
+  <!-- eyes -->
+  <ellipse cx="14" cy="22" rx="3" ry="3.5" fill="#0c0c0c"/>
+  <ellipse cx="26" cy="22" rx="3" ry="3.5" fill="#0c0c0c"/>
+  <!-- eye shine -->
+  <ellipse cx="15" cy="21" rx="1" ry="1.2" fill="white"/>
+  <ellipse cx="27" cy="21" rx="1" ry="1.2" fill="white"/>
+  <!-- nose -->
+  <polygon points="20,27 18,25 22,25" fill="#ff5c3a"/>
+  <!-- mouth -->
+  <path d="M18 27.5 Q20 29.5 22 27.5" stroke="#0c0c0c" stroke-width="1" fill="none"/>
+  <!-- whiskers left -->
+  <line x1="6" y1="25" x2="15" y2="26" stroke="#e8e8e8" stroke-width="0.8" opacity="0.8"/>
+  <line x1="6" y1="27.5" x2="15" y2="27.5" stroke="#e8e8e8" stroke-width="0.8" opacity="0.8"/>
+  <!-- whiskers right -->
+  <line x1="34" y1="25" x2="25" y2="26" stroke="#e8e8e8" stroke-width="0.8" opacity="0.8"/>
+  <line x1="34" y1="27.5" x2="25" y2="27.5" stroke="#e8e8e8" stroke-width="0.8" opacity="0.8"/>
+</svg>`;
 
 document.addEventListener('mousemove', e => {
   cursor.style.left = e.clientX + 'px';
   cursor.style.top = e.clientY + 'px';
-  setTimeout(() => {
-    trail.style.left = e.clientX + 'px';
-    trail.style.top = e.clientY + 'px';
-  }, 80);
+});
+
+// blink on click
+document.addEventListener('mousedown', () => {
+  cursor.querySelector('svg').style.transform = 'scale(0.85)';
+});
+document.addEventListener('mouseup', () => {
+  cursor.querySelector('svg').style.transform = 'scale(1)';
 });
 
 // ── SCROLL REVEAL ──
